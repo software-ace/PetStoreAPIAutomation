@@ -6,7 +6,7 @@
     </listeners>
     <test name="APITests">
         <classes>
-<!--            <class name="api.test.UserTests"/>-->
+            <class name="api.test.UserTests"/>
             <class name="api.test.UserDataDrivenTests"/>
         </classes>
     </test>
