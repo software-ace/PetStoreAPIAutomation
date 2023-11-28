@@ -27,7 +27,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: testing-report
-          path: reports/
+          path: target/reports/
 
       - name: Archive Log Files
         uses: actions/upload-artifact@v2
