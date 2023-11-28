@@ -23,11 +23,6 @@ jobs:
       - name: Build with Maven
         run: mvn clean test
 
-  upload-artifacts:
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
       - name: Archive HTML Report
         uses: actions/upload-artifact@v2
         with:
