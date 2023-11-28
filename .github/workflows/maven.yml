@@ -24,6 +24,7 @@ jobs:
         run: mvn clean test
 
   upload-artifacts:
+    needs: build
     runs-on: ubuntu-latest
 
     steps:
