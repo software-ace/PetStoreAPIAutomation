@@ -6,8 +6,11 @@ public class Enums {
         APPROVED,
         DELIVERED
     }
-    public enum PetStatus {
 
+    public enum PetStatus {
+        Available,
+        Pending,
+        Sold
     }
 
 }

@@ -3,11 +3,17 @@ package api.payload;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter
 @Setter
 public class Pet {
     int id;
+    PetCategory category;
     String name;
-    //tags
+    List<PetTag> tags;
+    Enums.PetStatus status;
+
+
     //status
 }
