@@ -23,15 +23,11 @@ jobs:
       - name: Build and test with Maven
         run: mvn clean test
 
-      - name: Set absolute path to reports directory
-        run: echo "REPORTS_PATH=${{ github.workspace }}/reports" >> $GITHUB_ENV
-
       - name: Archive HTML Report
         uses: actions/upload-artifact@v3
         with:
-          name: testing-report
-          path: ${{ env.REPORTS_PATH }}/
-
+          name: report
+          path: reports/
       - name: Archive Log Files
         uses: actions/upload-artifact@v3
         with:
